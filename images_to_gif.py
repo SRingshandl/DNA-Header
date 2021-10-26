@@ -11,11 +11,9 @@ for file in os.listdir(folder_path):
         image_list.append(os.path.join(folder_path, file))
 print("of which valid images: " + str(len(image_list)))
 
+startimage = Image.open(image_list[0])
 additional_image_list = []
 for i in range(1, len(image_list)):
     additional_image_list.append(Image.open(image_list[i]))
 
-startimage = Image.open(image_list[0])
 startimage.save("generated_output.gif", save_all=True, append_images=additional_image_list, duration=20, loop=0)
-
-print("Job completed and output generated")

@@ -1,7 +1,7 @@
 # DNA-Header
 <img src="https://github.com/SRingshandl/DNA-Header/blob/main/generated_output.gif" width="100%">
 
-Small project for an animated gif above my github page
+Small project for an animated gif above my github page.
 
 The program creates a specified number of png pictures in an output folder via R and merges them into a gif file via python.  
 The python script is called from the R program.  
